@@ -87,7 +87,7 @@ public class TabFragment extends Fragment {
     class MyAdapter extends FragmentPagerAdapter {
 
         MyAdapter(FragmentManager fm) {
-            super(fm);
+            super(fm, FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         }
 
         //return the fragment with respect to page position.
