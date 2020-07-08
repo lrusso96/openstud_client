@@ -95,6 +95,7 @@ dependencies {
     implementation 'com.karumi:dexter:6.2.0'
     implementation 'com.github.lithiumsr:ExpandableLayout:2.9.5'
     implementation 'me.zhanghai.android.materialprogressbar:library:1.6.1'
+    implementation 'com.github.MFlisar:changelog:1.1.7'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'

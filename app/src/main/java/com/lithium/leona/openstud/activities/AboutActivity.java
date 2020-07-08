@@ -21,6 +21,8 @@ import com.lithium.leona.openstud.R;
 import com.lithium.leona.openstud.helpers.ClientHelper;
 import com.lithium.leona.openstud.helpers.LayoutHelper;
 import com.lithium.leona.openstud.helpers.ThemeEngine;
+import com.michaelflisar.changelog.ChangelogBuilder;
+import com.michaelflisar.changelog.classes.DefaultAutoVersionNameFormatter;
 import com.mikepenz.aboutlibraries.Libs;
 import com.mikepenz.aboutlibraries.LibsBuilder;
 import com.mikepenz.fontawesome_typeface_library.FontAwesome;
@@ -58,8 +60,14 @@ public class AboutActivity extends MaterialAboutActivity {
         LayoutHelper.setColorSrcAtop(version, tintColor);
         appCardBuilder.addItem(new MaterialAboutActionItem.Builder()
                 .text(getResources().getString(R.string.version))
-                .icon(version).subText(BuildConfig.VERSION_NAME).build());
-
+                .icon(version).subText(BuildConfig.VERSION_NAME)
+                .setOnClickAction(() ->
+                        new ChangelogBuilder()
+                                .withTitle("Changelog")
+                                .withUseBulletList(true)
+                                .withVersionNameFormatter(new DefaultAutoVersionNameFormatter(DefaultAutoVersionNameFormatter.Type.MajorMinor, "b"))
+                                .buildAndShowDialog(this, false))
+                .build());
     }
 
     private void buildAuthor(Context context, MaterialAboutCard.Builder authorCardBuilder) {

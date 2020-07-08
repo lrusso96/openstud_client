@@ -216,6 +216,7 @@
         <item name="colorAccent">@android:color/holo_red_light</item>
         <item name="android:navigationBarColor">#303030</item>
         <item name="primaryTextColor">#FFFFFF</item>
+        <item name="colorSurface">#303030</item>
     </style>
 
     <style name="AppTheme.MaterialAboutActivityBlack" parent="Theme.Mal.Dark">
@@ -227,6 +228,7 @@
         <item name="android:windowBackground">@android:color/black</item>
         <item name="mal_card_background">@color/lesserBlack</item>
         <item name="ToolBarStyle">@style/ToolBarStyleBlack</item>
+        <item name="colorSurface">@color/md_black_1000</item>
     </style>
 
     <style name="AppTheme.MaterialAboutActivityLight" parent="Theme.Mal.Light.DarkActionBar">
@@ -236,6 +238,7 @@
         <item name="primaryTextColor">@android:color/black</item>
         <item name="android:windowBackground">@color/lightBackgroundCardLayout</item>
         <item name="mal_card_background">#ffffff</item>
+        <item name="colorSurface">@color/md_white_1000</item>
     </style>
 
     <style name="BasePreferencesTheme" parent="@style/PreferenceThemeOverlay.v14.Material">

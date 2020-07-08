@@ -1,0 +1,6 @@
+<changelog>
+    <release versionCode="187" versionName="v1.29.0" date="2020-07-01">
+        <new>Card studente nella sezione Profilo</new>
+        <bugfix>Risolto un bug nella gestione degli appelli</bugfix>
+    </release>
+</changelog>
