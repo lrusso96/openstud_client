@@ -29,7 +29,12 @@
             android:key="@string/key_delete"
             android:title="@string/delete_pdf"
             app:iconSpaceReserved="false" />
-
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_show_changelog"
+            android:summary="@string/show_changelog_description"
+            android:title="@string/show_changelog"
+            app:iconSpaceReserved="false" />
     </PreferenceCategory>
 
     <PreferenceCategory

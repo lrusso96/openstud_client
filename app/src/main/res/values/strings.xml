@@ -285,4 +285,7 @@
     <string name="account_blocked_error">Account is blocked. Please contact the student office</string>
     <string name="invalid_password_error_with_counter_singular">Invalid credentials. %1$s attempt left</string>
     <string name="invalid_password_error_with_counter_plural">Invalid credentials. %1$s attempts left</string>
+    <string name="key_show_changelog" translatable="false">key_show_changelog</string>
+    <string name="show_changelog_description">When the app is updated show a brief changelog on startup</string>
+    <string name="show_changelog">Show changelog on startup</string>
 </resources>

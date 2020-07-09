@@ -44,6 +44,7 @@
         <item name="SpinnerTheme">@style/SpinnerLight</item>
         <item name="SwipeSpinnerBackgroundColor">@color/white</item>
         <item name="SwipeSpinnerColor">@color/refreshLight</item>
+        <item name="colorSurface">@color/md_white_1000</item>
     </style>
 
     <style name="AppThemeDark" parent="MaterialDrawerTheme.Light.DarkToolbar">
@@ -71,6 +72,7 @@
         <item name="emptyViewColor">@android:color/darker_gray</item>
         <item name="searchBarTheme">@style/DarkSearchBar</item>
         <item name="ToolBarStyle">@style/ToolBarStyleDefault</item>
+        <item name="colorSurface">#303030</item>
 
         <item name="material_drawer_background">#212121</item>
         <item name="material_drawer_primary_text">#F4F4F6</item>
@@ -116,6 +118,7 @@
         <item name="emptyViewColor">@android:color/darker_gray</item>
         <item name="searchBarTheme">@style/BlackSearchBar</item>
         <item name="ToolBarStyle">@style/ToolBarStyleBlack</item>
+        <item name="colorSurface">@color/md_black_1000</item>
 
         <item name="material_drawer_background">#000000</item>
         <item name="material_drawer_primary_text">#F4F4F6</item>
@@ -521,7 +524,7 @@
     <style name="AppThemeLight.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="WebViewToolbarSubtitleAppearance" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
-        <item name="android:textSize">13dp</item>
+        <item name="android:textSize">13sp</item>
     </style>
 
 </resources>

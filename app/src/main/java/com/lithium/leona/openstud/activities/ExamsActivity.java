@@ -21,6 +21,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.snackbar.Snackbar;
 import com.lithium.leona.openstud.R;
 import com.lithium.leona.openstud.data.InfoManager;
+import com.lithium.leona.openstud.data.PreferenceManager;
 import com.lithium.leona.openstud.fragments.BottomSheetOpisFragment;
 import com.lithium.leona.openstud.fragments.ExamDoableFragment;
 import com.lithium.leona.openstud.fragments.ExamsDoneFragment;
@@ -28,7 +29,12 @@ import com.lithium.leona.openstud.fragments.ReservationsFragment;
 import com.lithium.leona.openstud.helpers.ClientHelper;
 import com.lithium.leona.openstud.helpers.LayoutHelper;
 import com.lithium.leona.openstud.helpers.ThemeEngine;
+import com.michaelflisar.changelog.ChangelogBuilder;
+import com.michaelflisar.changelog.classes.DefaultAutoVersionNameFormatter;
+import com.michaelflisar.changelog.internal.ChangelogPreferenceUtil;
 import com.mikepenz.materialdrawer.Drawer;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
 
@@ -102,6 +108,19 @@ public class ExamsActivity extends BaseDataActivity {
             fm.beginTransaction().add(R.id.content_frame, fragDone, "completed").commit();
             active = fragDone;
             analyzeExtras(getIntent().getExtras());
+        }
+
+        if(PreferenceManager.isChangelogOnStartupEnabled(getApplicationContext())) {
+            // show also on first installation
+            boolean managedStart = true;
+            if (ChangelogPreferenceUtil.getAlreadyShownChangelogVersion(getApplicationContext()) == -1)
+                managedStart = false;
+            new ChangelogBuilder()
+                    .withManagedShowOnStart(managedStart)
+                    .withTitle("Changelog")
+                    .withUseBulletList(true)
+                    .withVersionNameFormatter(new DefaultAutoVersionNameFormatter(DefaultAutoVersionNameFormatter.Type.MajorMinor, "b"))
+                    .buildAndShowDialog(this, false);
         }
     }
 
@@ -210,7 +229,7 @@ public class ExamsActivity extends BaseDataActivity {
     }
 
     @Override
-    protected void onSaveInstanceState(Bundle outState) {
+    protected void onSaveInstanceState(@NotNull Bundle outState) {
         super.onSaveInstanceState(outState);
         //outState.putInt("tabSelected", itemId);
         getSupportFragmentManager().putFragment(outState, "completed", fragDone);

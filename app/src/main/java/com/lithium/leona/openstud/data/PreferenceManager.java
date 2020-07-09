@@ -188,4 +188,9 @@ public class PreferenceManager {
         return pref.getBoolean(context.getResources().getString(R.string.key_exam_date), false);
     }
 
+    public static boolean isChangelogOnStartupEnabled(Context context) {
+        setupSharedPreferences(context);
+        return pref.getBoolean(context.getResources().getString(R.string.key_show_changelog), true);
+    }
+
 }

@@ -262,4 +262,6 @@
     <string name="account_blocked_error">Account bloccato. Contattare la segreteria studenti</string>
     <string name="invalid_password_error_with_counter_singular">Credenziali errate. %1$s tentativo rimasto</string>
     <string name="invalid_password_error_with_counter_plural">Credenziali errate. %1$s tentativi rimasti</string>
+    <string name="show_changelog">Mostra il changelog all\'avvio</string>
+    <string name="show_changelog_description">Quando l\'app viene aggiornata mostra un resoconto dei cambiamenti al primo accesso</string>
 </resources>
