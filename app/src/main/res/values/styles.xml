@@ -72,7 +72,7 @@
         <item name="emptyViewColor">@android:color/darker_gray</item>
         <item name="searchBarTheme">@style/DarkSearchBar</item>
         <item name="ToolBarStyle">@style/ToolBarStyleDefault</item>
-        <item name="colorSurface">#303030</item>
+        <item name="colorSurface">@color/md_white_1000</item>
 
         <item name="material_drawer_background">#212121</item>
         <item name="material_drawer_primary_text">#F4F4F6</item>
@@ -118,7 +118,7 @@
         <item name="emptyViewColor">@android:color/darker_gray</item>
         <item name="searchBarTheme">@style/BlackSearchBar</item>
         <item name="ToolBarStyle">@style/ToolBarStyleBlack</item>
-        <item name="colorSurface">@color/md_black_1000</item>
+        <item name="colorSurface">@color/md_white_1000</item>
 
         <item name="material_drawer_background">#000000</item>
         <item name="material_drawer_primary_text">#F4F4F6</item>

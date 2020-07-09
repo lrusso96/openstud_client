@@ -34,8 +34,6 @@ import com.michaelflisar.changelog.classes.DefaultAutoVersionNameFormatter;
 import com.michaelflisar.changelog.internal.ChangelogPreferenceUtil;
 import com.mikepenz.materialdrawer.Drawer;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.Objects;
 
 import butterknife.BindView;
@@ -229,7 +227,7 @@ public class ExamsActivity extends BaseDataActivity {
     }
 
     @Override
-    protected void onSaveInstanceState(@NotNull Bundle outState) {
+    protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         //outState.putInt("tabSelected", itemId);
         getSupportFragmentManager().putFragment(outState, "completed", fragDone);
