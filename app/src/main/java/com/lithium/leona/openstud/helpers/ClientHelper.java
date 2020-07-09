@@ -441,7 +441,7 @@ public class ClientHelper {
     }
 
     public static void requestReadWritePermissions(Activity activity, PermissionListener listener) {
-        Dexter.withActivity(activity).withPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE).withListener(listener).check();
+        Dexter.withContext(activity.getApplicationContext()).withPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE).withListener(listener).check();
     }
 
     public static void openActionViewPDF(Activity activity, File pdfFile) {
