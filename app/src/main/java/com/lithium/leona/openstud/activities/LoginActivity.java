@@ -222,7 +222,7 @@ public class LoginActivity extends AppCompatActivity {
         if (bdl == null) return;
         int error = bdl.getInt("error", -1);
         if (error == -1) return;
-        else if (error == ClientHelper.Status.INVALID_CREDENTIALS.getValue())
+        if (error == ClientHelper.Status.INVALID_CREDENTIALS.getValue())
             LayoutHelper.createTextSnackBar(layout, R.string.invalid_password_error, Snackbar.LENGTH_LONG);
         else if (error == ClientHelper.Status.ACCOUNT_BLOCKED.getValue())
             LayoutHelper.createTextSnackBar(layout, R.string.account_blocked_error, Snackbar.LENGTH_LONG);

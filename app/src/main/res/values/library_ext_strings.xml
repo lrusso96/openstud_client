@@ -85,4 +85,17 @@
     <string name="library_searchbar_libraryVersion">0.8.2</string>
     <string name="library_searchbar_isOpenSource">true</string>
     <string name="library_searchbar_classPath">com.mancj.materialsearchbar.MaterialSearchBar</string>
+
+    <!-- Changelog section -->
+    <string name="define_int_changelog" />
+    <string name="library_changelog_author">Michael Flisar</string>
+    <string name="library_changelog_authorWebsite">https://mflisar.github.io/</string>
+    <string name="library_changelog_libraryName">Changelog</string>
+    <string name="library_changelog_libraryDescription">A simple builder based changelog library</string>
+    <string name="library_changelog_libraryWebsite">https://github.com/MFlisar/changelog</string>
+    <string name="library_changelog_respositoryLink">https://github.com/MFlisar/changelog</string>
+    <string name="library_changelog_libraryVersion">1.1.7</string>
+    <string name="library_changelog_isOpenSource">true</string>
+    <string name="library_changelog_classPath">com.michaelflisar.changelog.ChangelogBuilder</string>
+
 </resources>
